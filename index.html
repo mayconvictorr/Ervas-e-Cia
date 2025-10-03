@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Ervas & Cia | Tereré, Narguilé e Roupas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-4 bg-dark text-white">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="text-decoration-none">
+                <h1 class="h3 fw-bold mb-0">Ervas & Cia</h1>
+            </a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#produtos">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-outline-light fw-bold" aria-expanded="false">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista d-none">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"><i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="banner" class="text-center p-5 bg-light rounded-3">
+            <h2 class="display-4 fw-bold">Bem-vindo à Ervas & Cia</h2>
+            <p class="lead">Qualidade e variedade em produtos para tereré, narguilé e vestuário.</p>
+            <a href="#produtos" class="btn btn-dark btn-lg mt-3">Ver Produtos</a>
+        </section>
+
+        <section id="produtos" class="mt-5">
+            <h3 class="text-center mb-4 fw-bold">Nossos Produtos</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Exemplo de item de produto (tereré) -->
+                <div class="col">
+                    <div class="card h-100">
+                        <!-- Busca a imagem na pasta 'img' -->
+                        <img src="img/terere.webp" class="card-img-top" alt="Erva de Tereré">
+                        <div class="card-body">
+                            <h5 class="card-title">Erva de Tereré Tradicional</h5>
+                            <p class="card-text">Erva de mate de alta qualidade para um tereré refrescante.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Exemplo de item de produto (narguilé) -->
+                <div class="col">
+                    <div class="card h-100">
+                        <!-- Busca a imagem na pasta 'img' -->
+                        <img src="img/narguile.webp" class="card-img-top" alt="Kit Narguilé">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit Narguilé Completo</h5>
+                            <p class="card-text">Kit com tudo o que você precisa para uma sessão perfeita.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Exemplo de item de produto (roupas) -->
+                <div class="col">
+                    <div class="card h-100">
+                        <!-- Busca a imagem na pasta 'img' -->
+                        <img src="img/roupas.jpeg" class="card-img-top" alt="Camiseta Exclusiva">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Exclusiva "Ervas & Cia"</h5>
+                            <p class="card-text">Vista a marca com estilo e conforto.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="mt-5 text-center">
+            <h3 class="fw-bold">Sobre Nós</h3>
+            <p>A Ervas & Cia é uma loja virtual. Nosso objetivo é oferecer produtos de qualidade para os amantes de tereré, narguilé e também roupas com estilo e personalidade.</p>
+        </section>
+
+        <section id="contato" class="mt-5 text-center">
+            <h3 class="fw-bold">Contato</h3>
+            <p>Fale conosco para tirar suas dúvidas ou fazer um pedido. Siga nossas redes sociais!</p>
+            <!-- Adicionar links para redes sociais aqui -->
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white p-4 text-center mt-5">
+        <p>&copy; 2025 Ervas & Cia, Maycon DIas Bernardes, Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts do Bootstrap e acessibilidade -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
+
